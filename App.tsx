@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { UploadCloud, FileText, Play, BrainCircuit, Sparkles } from 'lucide-react';
+import { UploadCloud, FileText, Play, BrainCircuit, Sparkles, BookOpen } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import ConfigPanel from './components/ConfigPanel';
 import SurvivalChart from './components/SurvivalChart';
@@ -147,11 +147,11 @@ const App: React.FC = () => {
                     className="w-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white p-4 rounded-lg shadow-md flex items-center justify-center gap-2 transition disabled:opacity-50 disabled:cursor-not-allowed font-medium"
                 >
                     {isAiLoading ? (
-                        <span className="animate-pulse">Generating Insights...</span>
+                        <span className="animate-pulse">Loading Example...</span>
                     ) : (
                         <>
-                            <BrainCircuit className="w-5 h-5" />
-                            Generate AI Report
+                            <BookOpen className="w-5 h-5" />
+                            Load Example Report
                         </>
                     )}
                 </button>
@@ -179,10 +179,10 @@ const App: React.FC = () => {
                         <div className="p-2 bg-emerald-100 rounded-lg">
                             <BrainCircuit className="w-5 h-5 text-emerald-600"/>
                         </div>
-                        Biological Interpretation
+                        Biological Interpretation (Example)
                         <span className="text-xs font-normal text-emerald-700 bg-emerald-50 px-2 py-1 rounded-full border border-emerald-200 flex items-center gap-1">
                            <Sparkles size={10} />
-                           Gemini Powered
+                           Static Demo
                         </span>
                     </h3>
                     
@@ -216,7 +216,7 @@ const App: React.FC = () => {
             
             {/* Footer Metadata */}
             <div className="text-center text-xs text-slate-400 mt-12 pb-8">
-                Powered by MoveApps R-SDK Architecture &bull; React 18 &bull; Gemini API
+                Powered by MoveApps R-SDK Architecture &bull; React 18 &bull; Static Demo
             </div>
           </div>
         </div>
