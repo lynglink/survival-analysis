@@ -1,0 +1,5 @@
+{
+  "name": "MoveApps Survival Estimator",
+  "description": "A standardized, GUI-driven interface for automating Kaplan–Meier survival analysis on wildlife tracking data. visualizing survival curves and life tables.",
+  "requestFramePermissions": []
+}
